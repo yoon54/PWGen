@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Random Password Generator";
+}
+@model Dictionary<string, object>;
+<div class="jumbotron">
+    <h1>Random Password Generator</h1>
+    <fieldset>
+        <legend>New Password</legend>
+        <h3>@Model["passcode"]</h3>
+    </fieldset>
+    <p>You have generated @Model["counter"] Password(s) so far!</p>
+    <a href="/reset" class="btn btn-danger">New Password</a>
+</div>
